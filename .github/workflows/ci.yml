@@ -43,8 +43,3 @@ jobs:
           LLM_PROVIDER: "mock"
         run: |
           pytest -v
-          status=$?
-          if [ $status -eq 5 ]; then
-            exit 0
-          fi
-          exit $status
